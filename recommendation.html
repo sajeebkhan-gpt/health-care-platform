@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recommendation - Healthcare Platform</title>
+    <link href="/static/styles.css" rel="stylesheet">
+    <style>
+        /* Fallback inline CSS */
+        body { background: #0d1b2a; color: #e0e1dd; font-family: sans-serif; }
+        nav { background: #1e3a8a; padding: 1rem; }
+        nav a { color: #00ffcc; text-decoration: none; margin: 0 1rem; }
+        .container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
+        .card { background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 12px; }
+        h2 { color: #00ffcc; }
+        button { background: #3b82f6; color: white; padding: 0.75rem; border-radius: 8px; width: 100%; }
+        textarea { width: 100%; padding: 0.75rem; margin-bottom: 1rem; }
+        label { color: #3b82f6; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="/" class="text-2xl">Healthcare Platform</a>
+            <div>
+                <a href="/login">Login</a>
+                <a href="/signup">Sign Up</a>
+                <a href="/logout">Logout</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <h2>Add Recommendation</h2>
+            <form method="POST" action="/recommendation">
+                <input type="hidden" name="symptom_id" value="{{symptom_id}}">
+                <label>Recommendation</label>
+                <textarea name="text" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
