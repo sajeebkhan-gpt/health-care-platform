@@ -1,0 +1,161 @@
+/* Futuristic CSS Design */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap');
+
+body {
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    color: #e0e1dd;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: linear-gradient(to right, #1e3a8a, #3b82f6);
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.2);
+}
+
+nav .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #00ffcc;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    margin-left: 1rem;
+    transition: text-shadow 0.3s ease;
+}
+
+nav a:hover {
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+    animation: fadeIn 0.5s ease-in;
+}
+
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ffcc;
+    text-shadow: 0 0 5px #00ffcc;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #3b82f6;
+    margin-bottom: 1rem;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #00ffcc;
+    border-radius: 8px;
+    color: #e0e1dd;
+    font-family: 'Roboto', sans-serif;
+    transition: box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 10px #00ffcc;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background: linear-gradient(to right, #3b82f6, #00ffcc);
+    border: none;
+    border-radius: 8px;
+    color: #0d1b2a;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px #00ffcc;
+}
+
+a.button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(to right, #3b82f6, #00ffcc);
+    border-radius: 8px;
+    color: #0d1b2a;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    margin-right: 0.5rem;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+a.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px #00ffcc;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+li:hover {
+    background: rgba(0, 255, 255, 0.1);
+}
+
+label {
+    color: #3b82f6;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    nav .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav a {
+        margin: 0.5rem 0;
+    }
+    .card {
+        padding: 1rem;
+    }
+}
