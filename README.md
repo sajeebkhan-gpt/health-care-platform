@@ -1,30 +1,30 @@
 # 🏥 Health Care Platform
 
-A web-based platform for managing health care services, including patient registration, doctor appointments, and medical record handling. Built with a focus on accessibility, simplicity, and functionality.
+A web-based platform designed to manage health care services including patient registration, doctor appointments, and medical records.
 
 ---
 
-## 🚀 Features
-- 🧾 Patient registration & login
-- 🩺 Doctor appointment scheduling
-- 📄 Medical history tracking
-- 🛠 Admin dashboard for management
-- 🔐 Secure authentication system
-- 📧 Contact or support form
+## 🔧 Technologies Used
+- Python / Django (or Flask)
+- HTML, CSS, JavaScript
+- SQLite / MySQL
+- Bootstrap (for UI)
 
 ---
 
-## 🔧 Tech Stack Used
-| Technology | Description                  |
-|------------|------------------------------|
-| Python     | Core programming language    |
-| Flask / Django | Backend framework        |
-| HTML/CSS   | UI design                    |
-| Bootstrap  | Styling & responsive layout  |
-| SQLite / MySQL | Database management      |
+## 🌟 Features
+- User registration and login
+- Book doctor appointments
+- Admin dashboard to manage patients
+- Medical record keeping
+- Search functionality
 
 ---
 
 ## 📸 Screenshots
-> _(Optional: Upload images in a folder like `/screenshots/` and link here)_
+![Home Page](screenshots/home.png)
+![Dashboard](screenshots/dashboard.png)
+
+---
+
 
